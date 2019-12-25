@@ -111,5 +111,24 @@ namespace CandidateManagementAPI.Controllers
             return new JsonResult(result);
 
         }
+
+        // DELETE ALL SKILLS: api/ApiWithActions/5
+        public JsonResult DeleteSkill()
+        {
+            bool result = true ;
+            try
+            {
+                //result = _repository.DeleteSkill();
+            }
+
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                result = false;
+            }
+
+            return new JsonResult(result);
+
+        }
     }
 }
